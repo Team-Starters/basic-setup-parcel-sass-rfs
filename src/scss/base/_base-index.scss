@@ -1,0 +1,10 @@
+@import "fonts";
+@import "reset";
+@import "typography";
+@import "variables";
+
+$primary-color: rgb(240, 52, 124);
+
+h1 {
+    color: $primary-color;
+}

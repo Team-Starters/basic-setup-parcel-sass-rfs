@@ -1,0 +1,1 @@
+{"version":3,"sources":["styles/main.scss"],"names":[],"mappings":"AAEA,GACE","file":"main.c9ef900e.css","sourceRoot":"../src","sourcesContent":["$blue-ocean: pink;\n\nh1 {\n  color: $blue-ocean\n}"]}
