@@ -1,1 +1,1 @@
-{"version":3,"sources":["scss/base/_base-index.scss"],"names":[],"mappings":"AAMA;EACI,OAHY","file":"main.fb6bbcaf.css","sourceRoot":"../src","sourcesContent":["@import \"fonts\";\n@import \"typography\";\n@import \"variables\";\n\n$primary-color: rgb(240, 52, 124);\n\nh1 {\n    color: $primary-color;\n}"]}
+{"version":3,"sources":["scss/base/_page.scss"],"names":[],"mappings":"AAEC;EACC","file":"main.fb6bbcaf.css","sourceRoot":"../src","sourcesContent":["\t// Ensures page width is always >=320px.\r\n\t\r\n\tbody {\r\n\t\tbackground: pink;\r\n\t}"]}
