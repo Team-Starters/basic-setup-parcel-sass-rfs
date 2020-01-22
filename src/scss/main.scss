@@ -1,3 +1,22 @@
-// import partials here
+//___import partials here___//
+
+//___Base___//
 
 @import "base/page";
+@import "base/base";
+@import "base/reset";
+@import "base/typography";
+
+
+//___Components__//
+
+@import "components/image";
+@import "components/form";
+
+
+//___Layouts___//
+
+@import "layout/main";
+@import "layout/header";
+@import "layout/navbar";
+@import "layout/sidebar";
