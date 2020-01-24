@@ -3,10 +3,14 @@
 //___Base___//
 
 @import "base/page";
-@import "base/base";
 @import "base/reset";
+@import "~rfs/scss";
 @import "base/typography";
 
+body {
+  background-color: $clr-bkg;
+	color: $clr-text-light;
+}
 
 //___Components__//
 
@@ -15,8 +19,9 @@
 
 
 //___Layouts___//
-
+@import "layout/wrapper";
 @import "layout/main";
 @import "layout/header";
 @import "layout/navbar";
 @import "layout/sidebar";
+

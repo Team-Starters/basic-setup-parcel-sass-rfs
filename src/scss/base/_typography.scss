@@ -7,49 +7,100 @@ $font-w-sb: 500;
 $font-w-b: 700;
 
 
-// Palette ________//
+//__Palette ___//
 
 /* Hexa */
 
-$clr-heading: #f56a6a;
-$clr-action: #00aea2;
-$clr-backg: #3d4449;
-$clr-sub-heading: #DAD4DE;
-$clr-text: #555151;
+$clr-red: #c53030;
+$clr-red-light:#fe645a;
+$clr-teal: #4db6ac;
+$clr-teal-light: #80cbc4;
+$clr-bkg: #1a202c;
+$clr-bkg-light:#414755;
+$clr-text-light: #ffffff;
+$clr-text-dark: #555151;
 
 
 h1, h2, h3, h4, h5, h6 {
-color: $clr-heading;
+color: $clr-red;
 font-family: $font-heading;
 font-weight: $font-w-b;
+}
+
+//___Fonts Size___//
+
+html {
+	font-size: 100%;
+}
+
+//___RFS___//
+
+body {
+	
+  // fix base and smallest font size
+	font-size: 1rem;
+ 
+ //fluid font from 320px onwards
+ @media (min-width: 375px) {
+	font-size: calc(1rem + 0.1vw);
+ }
+
+ @media (min-width: 540px) {
+	font-size: calc(1rem + 0.25vw);
+ }
+
+ @media (min-width: 768px) {
+	font-size: calc(1rem + 0.4vw);
+ }
+
+ @media (min-width: 1024px) {
+	font-size: 1.2rem;
+ }
+ //fix font size for large screens. Calculate this point
+ @media (min-width: 1280px) {
+	h1 {
+	 font-size: 1.4rem;
+	}
+ }
+}
+
+.page__title {
+  color: $clr-red;
+  @include font-size(4rem);
+}
+
+.page__subt {
+  color: $clr-text-light;
+  @include font-size(2.5rem);
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: $clr-red;
+}
+
+h2 {
+	@include font-size(3rem);
+}
+
+
+h3 {
+  @include font-size(2.5rem);
+}
+
+h4 {
+  @include font-size(2rem);
+}
+
+h5 {
+  @include font-size(1.75rem);
+}
+
+h6 {
+  @include font-size(1.5rem);
+}
 
 a {
 	color: inherit;
 	text-decoration: none;
 	border-bottom: 0;
-}
-}
-
-h1 {
-font-size: 3.5rem;
-}
-
-h2 {
-font-size: 2.75rem;
-}
-
-h3 {
-font-size: 2.25rem;
-}
-
-h4 {
-font-size: 1.75rem;
-}
-
-h5 {
-font-size: 1.5rem;
-}
-
-h6 {
-font-size: 1.25rem;
 }
